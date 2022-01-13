@@ -6,18 +6,19 @@
 /* Importa a fonte de um arquivo no projeto */
 
 @font-face {
-    font-family: Subscriber regular;
-    src: url(/Assets/Fonts/Foglihten-nYZP.otf);
+    font-family: Foglihten-nYZP;
+    src: url("./Assets/Fonts/Foglihten-nYZP.otf");
 }
 
 body {
-    font-family: Subscriber regular, sans-serif;
+    font-family: Foglihten-nYZP;
 }
 
 /* ------------- Header ------------- */
 
 header {
-    background: linear-gradient(to right, #2e2424, #331313, #2e2424);
+    background: rgb(114,118,218);
+    background: radial-gradient(circle, rgba(114,118,218,1) 0%, rgba(148,233,225,1) 100%);
     display: flex;
     align-items: center;
     font-size: 1.5rem;
@@ -49,13 +50,13 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     margin: 0 .5rem;
-    color: #fff;
+    color: black;
 }
 
 nav ul li a:hover {
-    color: #dd1818;
+    color: blue;
     transition: .6s;
-    text-decoration: underline #fff;
+    text-decoration:#fff;
 }
 
 .icones-menu {
@@ -79,12 +80,13 @@ nav ul li a:hover {
 
 #carousel {
     background: #000;
+
 }
 
 #banner {
     width: 100%;
     height: 60vh;
-    background-image: url(/Assets/img/banner\ 2.jpg);
+    background-image: url(/Assets/img/banner-1.jpg);
     background-size: cover;
     border-bottom: 4px solid rgba(0, 0, 0, .3);
     opacity: .5;
@@ -94,7 +96,7 @@ nav ul li a:hover {
 #banner-contato {
     width: 100%;
     height: 60vh;
-    background-image: url(/Assets/img/banner\ 3.png);
+    background-image: url(/Assets/img/banner-2.jpg);
     background-size: cover;
     background-position: bottom;
     border-bottom: 4px solid rgba(0, 0, 0, .3);
@@ -120,7 +122,7 @@ nav ul li a:hover {
 }
 
 .promocao .barra {
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgb(114,118,218);
     width: 25vw;
     height: 5px;
     margin: 5px auto;
@@ -128,7 +130,7 @@ nav ul li a:hover {
 
 .promocao span,
 .titulo-promo p:not(.promo p) {
-    color: #dd9103;
+    color: whitesmoke;
 }
 
 .promo {
@@ -146,7 +148,6 @@ nav ul li a:hover {
 .promo img {
     width: 5rem;
 }
-
 
 /* ------------- Main ------------- */
 
@@ -183,7 +184,7 @@ p {
     height: 40vh;
     border-radius: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
-    background: url(/assets/img/place.jpg);
+    background: url(/assets/img/place.jpg?);
     background-size: cover;
     background-position: center;
 }
@@ -243,7 +244,7 @@ p {
     border-radius: 5px;
     border: none;
     box-shadow: 2px 2px 2px #000;
-    background: #FFB52E;
+    background: blue;
     font-family: Subscriber regular;
     font-size: 1.5rem;
     color: #fff;
@@ -254,7 +255,7 @@ p {
 .img-destaque button:hover,
 .cont-right button:hover {
     cursor: pointer;
-    background: #dd9103;
+    background: blueviolet;
 }
 
 @media(max-width: 768px) {
@@ -270,16 +271,17 @@ p {
 /* ------------- Footer ------------- */
 
 #footer {
-    background-color: #000000;
+    background-color:rgb(114,118,218);
+    background: radial-gradient(circle, rgba(114,118,218,1) 0%, rgba(148,233,225,1) 100%);
     margin-top: 1.5rem;
 }
 
 #rodape {
-    background-image: url("/Assets/img/banner\ 1.jpg");
+    background-image: url(/Assets/img/Rodape.png);
     opacity: .7;
     background-size: cover;
     background-position: center;
-    border: solid 1px rgba(255, 255, 255, .7);
+    border: radial-gradient(circle, rgba(114,118,218,1) 0%, rgba(148,233,225,1) 100%);
     width: 100%;
     height: 200px;
     position: absolute;
@@ -369,7 +371,7 @@ p {
 
 ::-webkit-input-placeholder span {
     content: attr(data-end);
-    color: #dd1818;
+    color: red;
 }
 
 textarea:focus,
@@ -396,11 +398,11 @@ textarea {
 }
 
 .cont-right button:nth-child(2) {
-    background: #da2d2d;
+    background: blue;
 }
 
 .cont-right button:nth-child(2):hover {
-    background: #da1313;
+    background: blueviolet;
 }
 
 .form-btn {
@@ -420,7 +422,7 @@ textarea {
 }
 
 #alerta {
-    color: #dd1818;
+    color: red;
     font-weight: 100;
     letter-spacing: .5px;
     transition: .5s;
