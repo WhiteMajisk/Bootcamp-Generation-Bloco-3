@@ -1,45 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="/Assets/CSS/style.css">
 </head>
+
 <body>
+    <header>
+        <div class="logo">
+            <img src="/Assets/img/Logo Import Shoes.PNG" alt="Logo" width="50" height="50">
+            <span>Import Shoes</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
 
-    <ul>
-        <li>
-            <a href="index.html"> Home </a>
-        </li>
-        <li>
-            <a href="contato.html"> Contato </a>
-        </li>
-    </ul>
+            <div class="icones-menu">
+                <img src="/Assets/Icons/sacola.png" alt="Compras">
+                <img src="/Assets/Icons/estrela.png" alt="Favoritos">
+            </div>
+        </nav>
+    </header>
 
-    <h1>Entre em contato comigo</h1>
+    <section id="carousel">
+        <article id="banner-contato"></article>
 
-    <form>
-      <label for="nome">Nome:</label> <br>
-      <input type="text"id="nome">
-      <br>
-      <br>
-      <label for="email">Email:</label> <br>
-      <input type="text"id="email">
-      <br>
-      <br>
-      <label for="assunto">Assunto:</label> <br>
-      <textarea name="" id="" cols="50" rows="5"></textarea>
-      <br>
-      <br>
-      <button>Enviar</button>
-    </form>
+        <article class="promocao">
 
-    <h2>Endereço:</h2>
+            <div class="titulo-promo">
+                <div class="barra"></div>
+                <h1>Entre em contato <span>Conosco</span></h1>
+                <div class="barra"></div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, nihil?</p>
 
-    <p>Alemanha, Wolfsburg</p>
+                <div class="promo">
+                    <img src="/Assets/Icons/promocao.png" alt="promoção">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, assumenda! Suscipit quidem quia ea! A, pariatur. Iste, neque! Aliquam, modi!</p>
+                </div>
+            </div>
+        </article>
 
-    <iframe src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155780.32081989446!2d10.636819867076815!3d52.40545262306066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47af92424757e6b1%3A0x425ac6d94ac3ad0!2sWolfsburg%2C%20Alemanha!5e0!3m2!1spt-BR!2sbr!4v1641865398894!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
 
+    <main>
+        <section id="contato">
+            <div class="cont-left">
+                <h1>Vamos Conversar, fale conosco...</h1>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, voluptatem.</h3>
+                <img src="/Assets/Icons/sapato.png" alt="Imagem de contato">
+            </div>
+
+            <div class="cont-right">
+                <form>
+                    <input required type="text" name="nome" id="nome" placeholder="Nome completo">
+                    <input required type="email" name="email" id="email" placeholder="E-mail">
+                    <input required type="text" name="assunto" id="assunto" placeholder="Assunto">
+                    <textarea onkeyup="validar()" required name="msg" id="msg" cols="30 " rows="10 " placeholder="Mensagem (máx. 200 caracteres)... "></textarea>
+                    <p id="alerta"></p>
+                    <div class="form-btn ">
+                        <button id="enviar" onclick="submitForm()">Enviar mensagem</button>
+                        <button type="reset">Limpar form</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div id="rodape"></div>
+
+        <div class="info">
+            <h3>Nos siga nas redes sociais para acompanhar as nossas novidades!</h3>
+
+            <div class="social">
+                <img src="/Assets/Icons/facebook.png">
+                <img src="/Assets/Icons/instagram.png">
+                <img src="/Assets/Icons/twitter.png">
+                <img src="/Assets/Icons/whatsapp.png">
+            </div>
+
+            <p>Rodrigo Antunes - 2022 &copy;</p>
+        </div>
+    </footer>
+
+    <script src="/Assets/JS/script.js "></script>
 </body>
+
 </html>
